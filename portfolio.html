@@ -8,56 +8,123 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
-<body>
-        <nav class="navbar navbar-light bg-light">
-                <span class="navbar-text">
-                            Rashai James
-                </span>
-    
-                <a href="Contact.html">Contact</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="index.html">About</a>
-        </nav>
 
- <div>
-        <h1>Portfolio</h1>
-        <div class="container">
+<style>
+   nav.navbar {
+    background-color: black;
+    padding:25px;
+    border-bottom: solid lightskyblue;
+    margin-bottom: 25px;
+
+  }
+
+  .container {
+max-width: 600px;    
+margin-top: 20px;
+    background: white;
+    margin-left: 25px;
+
+  }
+
+  body {
+    background-image: url("oriental/oriental.png");
+  }
+
+  h1 {border-bottom: solid lightskyblue;
+  padding: 15px;
+  margin-left: 25px;
+  background: white;
+  margin-bottom:0;
+  width: 650px;}
+
+  .foot {
+    background: black;
+    border-top: lightskyblue 5px solid;
+    bottom:0;
+    width: 100%;
+    
+  }
+
+  
+
+  .navbar-text {
+    color: white; 
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+
+  #a {
+    color: white;
+    float: right;
+  }
+  .col-sm-6 {
+    width: 250px;
+  
+  }
+
+  .cont1 {
+    margin right: 15px;
+  }
+
+  #wholething {
+    background: white;
+    width: 650px;
+    padding-top: 20px;
+  margin-left: 25px;
+  padding-bottom: 35px;
+  margin-bottom: 20px;}
+
+  
+
+
+</style>
+<!--deleted bootstrap class "navbar-light" to override background color-->
+<body>
+        <nav class="navbar ">
+                 <div class="navbar-text">
+                            Rashai James </div>
+
+               <div id="a"> <a href="index.html">About</a>
+                 <a href="portfolio.html">portfolio</a>
+                 <a href="Contact.html">Contact</a>
+                </div>
+               
+        </nav>
+<!--changed col's to md-6; deleted extra col. added div around first row to fix picture alignment-->
+<h1>Portfolio</h1> 
+
+      <div id="wholething">  
+       <div id="cont1"> <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-6">
                 <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">           </div>
-          <div class="col-sm">
+          <div class="col-sm-6">
                 <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">           </div>
-          <div class="col-sm">
-        </div>
-      </div>
+      </div></div>
       <div class="container">
             <div class="row">
-              <div class="col-sm">
+              <div class="col-sm-6">
                     <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
-              <div class="col-sm">
+              <div class="col-sm-6">
                     <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
-              <div class="col-sm">
-                One of three columns
-              </div>
             </div>
           </div>
         <div class="container">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col-sm-6">
                         <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">                   </div>
-                  <div class="col-sm">
-                    One of three columns
-                  </div>
-                  <div class="col-sm">
-                    One of three columns
-                  </div>
+                  <div class="col-sm-6">
+                  </div> 
                 </div>
               </div>
- <div></div>
+       </div>
+ 
 
 </div>
-        <div class="card">
-                <div class="card-body">
+<!--un-did  position fixed so footer stays at the end-->
+        <div class="foot">
+                <div class="card-body">Copyright</div>
         </div>
 </body>
 </html>
