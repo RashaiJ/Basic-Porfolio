@@ -8,21 +8,72 @@
 
     <title>Contact</title>
 </head>
+<style>
+  nav.navbar {
+    background-color: black;
+    padding:25px;
+    border-bottom: solid lightskyblue;
+    margin-bottom: 25px;
+
+  }
+
+  body {
+    background-image: url("oriental/oriental.png");
+  }
+  h2{border-bottom: solid lightskyblue;
+  padding: 15px;
+  background: white;
+  margin-bottom:0;
+  max-width: 960px;}
+
+ #contact {
+   max-width: 960px;
+   padding: 10px;
+   margin: auto;
+   background: white;
+   margin-bottom: 45px;
+ }
+  .foot {
+    background: black;
+    border-top: lightskyblue 5px solid;
+    bottom:0;
+    width: 100%;
+    
+  }
+  #a {
+    color: white;
+    float: right;
+  }
+
+  .navbar-text {
+    color: white; 
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+
+  form {
+    padding-top: 10px;
+  }
+
+</style>
 <body>
 
-        <nav class="navbar navbar-light bg-light">
-                <span class="navbar-text">
+        <nav class="navbar">
+                <h1 class="navbar-text">
                             Rashai James
-                </span>
+                </h1> 
     
-                <a href="Contact.html">Contact</a>
+                <div id="a"><a href="index.html">About</a>
                 <a href="portfolio.html">portfolio</a>
-                <a href="index.html">About</a>
+                <a href="Contact.html">Contact</a></div> 
+               
         </nav>
 
               <!-- form section-->
-              <h1>Contact</h1>
-              <div></div>
+              <div id="contact">
+                <h2>Contact</h2>
+              
               <form>
                    
                     <div class="form-group">
@@ -41,10 +92,12 @@
                     </div>
 
                     <button type="button" class="btn btn-primary">Submit</button>
-                  </form>
-                    <div class="card">
-                    <div class="card-body">
+                 </div>
+                
+                </form>
+                    <div class="foot">
+                    <div class="card-body"> Copyright
                     </div>
-    
+               
 </body>
 </html>
