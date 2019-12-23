@@ -7,38 +7,105 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>About</title>
 </head>
-<body>
-    <!--nav with name and other links-->
+<style>
+  nav.navbar {
+    background-color: black;
+    padding:25px;
+    border-bottom: solid white;
+    margin-bottom: 25px;
 
-    <nav class="navbar navbar-light bg-light">
+  }
+  span.navbar {
+    float: left;
+    padding: 25px;
+  }
+
+  Span.navbar-text {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+  background: white;
+
+  }
+
+  .foot {
+    background: black;
+    border-top: white 5px solid;
+    padding: 20px;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    
+  }
+  
+  .mb-3 {
+    border: solid white;
+    margin-left: 25px;
+
+  }
+
+  h1 {border-bottom: solid black;
+  padding: 15px;
+  margin-left: 25px;
+  background: white;
+  margin-bottom:0;
+  width: 960px;}
+
+
+  body {
+    background-image: url("oriental/oriental.png");
+
+    
+  }
+ .card-text {
+   clear: left;
+ }
+ 
+</style>
+<body>
+    <!--nav with name and other links
+   - put links in order-->
+
+    <nav class="navbar navbar-light">
             <span class="navbar-text">
                         Rashai James
             </span>
-
-            <a href="Contact.html">Contact</a>
-            <a href="portfolio.html">portfolio</a>
-            <a href="index.html">About</a>
+           <div> <a href="index.html">About</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="Contact.html">Contact</a>
+            
+            
+          </div>
     </nav>
-    <!--div with photo and paragraphs-->
-    <h1>About me</h1>
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <!--div with photo and paragraphs;
+   changed card max-width-->
+    
+    <h1>About me</h1>
+    <!--deleted bg-light from class to manipulate background color of nav-->
+
+    <div class="card mb-3" style="max-width: 960px;">
                     <div class="row no-gutters">
-                      <div class="col-md-5">
+                      <div class="col-md-3">
                         <img src="https://via.placeholder.com/150" class="card-img" alt="...">
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-body">
-                          <p class="card-text">I'm Rashai. I'm fairly young so my Bio is still in its works. Contrarily,
-                            most would say I have something like an old soul. I'm a seek lots of knowledge and stay around the older people at family reunions. I'm born and raised in Arizona and think I'll retire here too.  </p>
-                        </div>
+                       
+                     </div>   
+             <div class="col-md-9">
+              <div class="card-body">
+              <p class="card-text">I'm Rashai. I'm fairly young so my Bio is still in its works. Contrarily,
+                            most would say I have something like an old soul. I like to seek lots of knowledge and stay around the older people at family reunions. 
+                          I'm born and raised in Arizona and think I'll retire here too.  </p>
+                          <br>
+               <p id="p1">After working around a ton of computer science majors and accidently opening the Google inspector a million times on the screen I decided to peak my head into the world of coding. I've spent most of my working years in Administrative work and find that i'm the organizational-detail orientated type. Coding has really challenged that. Hope these are the kind of things your're suposed to say in a bio. That's a little about me. </p>
                       </div>
                     </div>
-                  </div>
-   
+                    </div>
+    </div>
+
     <!--footer-->
-    <div class="card">
+    <div class="foot">
             <div class="card-body">
+              <p>copyright</p>
             </div>
           </div>
 
