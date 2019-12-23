@@ -26,29 +26,33 @@
     font-weight: bold;
 
   }
-
+  .col1 {
+    max-width: 960px;
+    margin-left: 30px;
+  }
+  
+  html {
+    overflow: hidden;
+    margin: 0;
+  }
   .foot {
     background: black;
-    border-top: lightskyblue 5px solid;
-    padding: 20px;
-    bottom:0;
-    position: fixed;
-    width: 100%;
+    border-top: lightskyblue 3px solid;
+    margin-top: 95px ;
+    text-align: center;
+    color: white;
     
   }
   
   .mb-3 {
     border: solid white;
-    margin-left: 25px;
-
   }
 
   h1 {border-bottom: solid lightskyblue;
   padding: 15px;
-  margin-left: 25px;
   background: white;
   margin-bottom:0;
-  width: 960px;}
+  }
 
 
   body {
@@ -62,10 +66,11 @@
  
 </style>
 <body>
-    <!--nav with name and other links
-   - put links in order-->
 
-    <nav class="navbar ">
+  <div class="container">
+    <div class="row">
+      <div class="col"> 
+        <nav class="navbar ">
             <div class="navbar-text">
                         Rashai James </div>
             
@@ -77,13 +82,12 @@
           </div>
     </nav>
 
-    <!--div with photo and paragraphs;
-   changed card max-width-->
-    
-    <h1>About me</h1>
-    <!--deleted bg-light from class to manipulate background color of nav-->
-
-    <div class="card mb-3" style="max-width: 960px;">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col col1">
+         <h1>About me</h1>
+         <div class="card mb-3" style="max-width: 960px;">
                     <div class="row no-gutters">
                       <div class="col-md-3">
                         <img src="https://via.placeholder.com/150" class="card-img" alt="...">
@@ -100,14 +104,21 @@
                     </div>
                     </div>
     </div>
-
-    <!--footer-->
-    <div class="foot">
+          </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <div class="foot">
             <div class="card-body">
               <p>copyright</p>
             </div>
           </div>
 
+          </div>
+    </div>
+
+  </div>
+    
     
 </body>
 </html>
