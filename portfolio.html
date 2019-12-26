@@ -18,31 +18,32 @@
 
   }
 
-  .container {
+  /* #wholething {
 max-width: 600px;    
 margin-top: 20px;
     background: white;
-    margin-left: 25px;
+    margin-left: 45px;
 
   }
+*/
+ 
 
   body {
     background-image: url("oriental/oriental.png");
   }
 
   h1 {border-bottom: solid lightskyblue;
-  padding: 15px;
-  margin-left: 25px;
   background: white;
-  margin-bottom:0;
-  width: 650px;}
+  margin-bottom:25px;
+  width: 600px;}
 
   .foot {
     background: black;
-    border-top: lightskyblue 5px solid;
-    bottom:0;
-    width: 100%;
-    
+    border-top: lightskyblue 3px solid;
+color: white;
+text-align: center; 
+position: absolute;   
+width: 100%;
   }
 
   
@@ -59,19 +60,20 @@ margin-top: 20px;
     float: right;
   }
   .col-sm-6 {
-    width: 250px;
+    width: 290px;
+    margin-bottom: 20px;
   
-  }
+  } 
 
   .cont1 {
     margin right: 15px;
   }
 
-  #wholething {
+  .col2 {
     background: white;
-    width: 650px;
+    max-width: 630px;
     padding-top: 20px;
-  margin-left: 25px;
+  margin-left: 45px;
   padding-bottom: 35px;
   margin-bottom: 20px;}
 
@@ -81,6 +83,20 @@ margin-top: 20px;
 </style>
 <!--deleted bootstrap class "navbar-light" to override background color-->
 <body>
+
+
+  <!-- labels over images <div class="box">
+    <div id="1">Word guess</div>
+    <div id="2">RPG game</div>
+    <div id="3">Info widget</div>
+    <div id="4">Trivia game</div>
+    <div id="5">Rock paper scissors</div>
+
+  </div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
         <nav class="navbar ">
                  <div class="navbar-text">
                             Rashai James </div>
@@ -90,41 +106,56 @@ margin-top: 20px;
                  <a href="Contact.html">Contact</a>
                 </div>
                
-        </nav>
-<!--changed col's to md-6; deleted extra col. added div around first row to fix picture alignment-->
-<h1>Portfolio</h1> 
+        </nav></div>
+    </div>
+    <div class="row">
+        <div class="col col2 allcol"> 
+          <div id="wholething"> 
+             <h1>Portfolio</h1> 
+            <div class="container" id="cont1">
+             <div class="row">
+               <div class="col-sm-6">
+                     <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">          </div>
+               <div class="col-sm-6">
+                     <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">   </div>
+           </div></div>
 
-      <div id="wholething">  
-       <div id="cont1"> <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-                <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">           </div>
-          <div class="col-sm-6">
-                <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">           </div>
-      </div></div>
-      <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                    <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
-              <div class="col-sm-6">
-                    <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
+           <div class="container">
+                 <div class="row">
+                   <div class="col-sm-6">
+                         <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
+                   <div class="col-sm-6">
+                         <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">               </div>
+                 </div>
+               </div>
+             <div class="container">
+                     <div class="row">
+                       <div class="col-sm-6">
+                             <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">                   </div>
+                       <div class="col-sm-6"> 
+                       </div> 
+                     </div>
+                   </div>
             </div>
-          </div>
-        <div class="container">
-                <div class="row">
-                  <div class="col-sm-6">
-                        <img src="http://lorempixel.com/output/nature-q-c-250-250-3.jpg">                   </div>
-                  <div class="col-sm-6">
-                  </div> 
-                </div>
-              </div>
-       </div>
- 
-
-</div>
-<!--un-did  position fixed so footer stays at the end-->
-        <div class="foot">
-                <div class="card-body">Copyright</div>
+      </div>
+    </div> 
+    <div class="row">
+        <div class="col">
+          <div class="foot">
+                <div class="card-body">Copyright©</div>
+        </div></div>
         </div>
+
+        <!--footer was outside col div and entire grid container. fixed. margins working-->
+        
+
+    </div>
+
+
+  </div>
+
+ </div>
+
+
 </body>
 </html>
